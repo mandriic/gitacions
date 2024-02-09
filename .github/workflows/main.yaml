@@ -18,6 +18,7 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: echo "🍏 This job's status is ${{ secrets.GITHUB_USERNAME }}."
       - run: echo "${{ secrets.DOCKERHUB_USERNAME }} "
+      - run: echo "${{ 
       - name: Setup QEMU
         uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
